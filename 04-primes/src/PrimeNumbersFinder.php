@@ -6,6 +6,10 @@ class PrimeNumbersFinder
 {
     public function upTo(int $limit): array
     {
+        if ($limit < 2) {
+            return [];
+        }
+
         $primes = array_filter(range(2, $limit), function (int $number) {
             return $this->isPrime($number);
         });
