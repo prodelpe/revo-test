@@ -1,0 +1,62 @@
+{
+    "products": [
+        {
+            "title": "Small Rubber Wallet",
+            "product_type": "Wallet",
+            "variants": [
+                { "title": "Blue", "price": 29.33 },
+                { "title": "Turquoise", "price": 18.50 }
+            ]
+        },
+        {
+            "title": "Sleek Cotton Shoes",
+            "product_type": "Shoes",
+            "variants": [
+                { "title": "Sky Blue", "price": 20.00 }
+            ]
+        },
+        {
+            "title": "Ergonomic Desk Lamp",
+            "product_type": "Lamp",
+            "variants": [
+                { "title": "White", "price": 45.00 },
+                { "title": "Black", "price": 52.90 },
+                { "title": "Grey", "price": 39.99 }
+            ]
+        },
+        {
+            "title": "Vintage Brass Lamp",
+            "product_type": "Lamp",
+            "variants": [
+                { "title": "Brass", "price": 120.00 }
+            ]
+        },
+        {
+            "title": "Leather Bifold Wallet",
+            "product_type": "Wallet",
+            "variants": [
+                { "title": "Brown", "price": 35.50 },
+                { "title": "Black", "price": 41.25 }
+            ]
+        },
+        {
+            "title": "Wool Hat",
+            "product_type": "Hat",
+            "variants": [
+                { "title": "Red", "price": 15.00 }
+            ]
+        },
+        {
+            "title": "Broken Lamp",
+            "product_type": "Lamp",
+            "variants": []
+        },
+        {
+            "title": "Travel Wallet",
+            "product_type": "Wallet",
+            "variants": [
+                { "title": "Green", "price": 12.99 }
+            ]
+        }
+    ]
+}
