@@ -20,4 +20,11 @@ class PrimeNumbersFinderTest extends TestCase
         $result = $finder->upTo(10);
         $this->assertSame([2, 3, 5, 7], $result);
     }
+
+    public function test_it_returns_no_primes_when_the_limit_is_below_two(): void
+    {
+        $finder = new PrimeNumbersFinder();
+        $result = $finder->upTo(1);
+        $this->assertSame([], $result);
+    }
 }
