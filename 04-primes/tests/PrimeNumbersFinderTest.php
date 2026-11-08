@@ -27,4 +27,11 @@ class PrimeNumbersFinderTest extends TestCase
         $result = $finder->upTo(1);
         $this->assertSame([], $result);
     }
+
+    public function test_it_finds_all_primes_up_to_one_thousand(): void
+    {
+        $finder = new PrimeNumbersFinder();
+        $result = $finder->upTo(1000);
+        $this->assertCount(168, $result);
+    }
 }
