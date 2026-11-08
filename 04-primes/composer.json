@@ -1,0 +1,21 @@
+{
+    "name": "pau/revo-test",
+    "description": "Revo technical test",
+    "type": "project",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Primes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Primes\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.4"
+    }
+}
