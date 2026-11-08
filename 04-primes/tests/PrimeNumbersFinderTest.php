@@ -13,4 +13,11 @@ class PrimeNumbersFinderTest extends TestCase
         $result = $finder->upTo(2);
         $this->assertSame([2], $result);
     }
+
+    public function test_it_returns_all_primes_up_to_ten(): void
+    {
+        $finder = new PrimeNumbersFinder();
+        $result = $finder->upTo(10);
+        $this->assertSame([2, 3, 5, 7], $result);
+    }
 }
