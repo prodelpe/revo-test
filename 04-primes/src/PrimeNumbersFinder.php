@@ -6,6 +6,6 @@ class PrimeNumbersFinder
 {
     public function upTo(int $limit): array
     {
-        return [];
+        return [2];
     }
 }
