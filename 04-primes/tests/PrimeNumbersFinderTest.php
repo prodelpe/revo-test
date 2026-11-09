@@ -32,9 +32,9 @@ class PrimeNumbersFinderTest extends TestCase
 
     public function test_it_returns_no_primes_when_the_limit_is_below_two(): void
     {
-        $result = $this->finder->upTo(1);
-
-        $this->assertSame([], $result);
+        $this->assertSame([], $this->finder->upTo(1));
+        $this->assertSame([], $this->finder->upTo(0));
+        $this->assertSame([], $this->finder->upTo(-5));
     }
 
     public function test_it_finds_all_primes_up_to_one_thousand(): void
