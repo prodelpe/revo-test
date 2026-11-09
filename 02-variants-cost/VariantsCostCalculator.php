@@ -5,7 +5,7 @@ class VariantsCostCalculator
     public function calculate(array $products, array $productTypes): float
     {
         $filteredProducts = array_filter($products, function ($product) use ($productTypes) {
-            return in_array($product['product_type'], $productTypes);
+            return in_array($product['product_type'], $productTypes, true);
         });
 
         $variantGroups = array_column($filteredProducts, 'variants');
