@@ -4,11 +4,15 @@ class HtmlStatementFormatter implements StatementFormatter
 {
     public function format(Customer $customer): string
     {
-        $result = "<h1>Rental Record for {$customer->getName()}</h1>\n";
+        $name = htmlspecialchars($customer->getName());
+
+        $result = "<h1>Rental Record for {$name}</h1>\n";
         $result .= "<ul>\n";
 
         $result .= implode('', array_map(function (Rental $rental) {
-            return "    <li>{$rental->getMovie()->getTitle()}: {$rental->getAmount()}</li>\n";
+            $title = htmlspecialchars($rental->getMovie()->getTitle());
+
+            return "    <li>{$title}: {$rental->getAmount()}</li>\n";
         }, $customer->getRentals()));
 
         $result .= "</ul>\n";
