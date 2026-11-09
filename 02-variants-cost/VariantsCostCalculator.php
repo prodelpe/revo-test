@@ -15,4 +15,3 @@ class VariantsCostCalculator
         return array_sum($prices);
     }
 }
-
